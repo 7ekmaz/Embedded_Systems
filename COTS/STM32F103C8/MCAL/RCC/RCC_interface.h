@@ -144,7 +144,16 @@ Std_ReturnType Mcal_Rcc_DisablePeripheral(u8 Copy_BusId, u8 Copy_PeripheralId);
 
 
 
-
-
+/**
+ * @brief Multiply Pll Clock with factor.
+ *
+ * 
+ * 
+ * @param[in] Copy_Clk_Multi        The Factor to be multiplied (2 ,3 ,4 ,5 ,.....16)
+ * @return Std_ReturnType
+ * @retval E_OK     PLL Clock multipled successful.
+ * @retval E_NOT_OK PLL Clock multipled failed.
+ */
+Std_ReturnType Mcal_Rcc_SetPLLClock_MUL(u8 Copy_Clk_Multi);
 
 #endif

@@ -85,7 +85,7 @@ Std_ReturnType Mcal_Gpio_SetPinMode (u8 Copy_PortId,u8 Copy_PinId,u8 Copy_PinMod
     }
     
 
-     return  Local_FunctionStatus;
+    return  Local_FunctionStatus;
 }
 
 
@@ -165,7 +165,7 @@ Std_ReturnType Mcal_Gpio_SetPinValue (u8 Copy_PortId,u8 Copy_PinId,u8 Copy_PinVa
         
         }
 
-         return  Local_FunctionStatus;
+        return  Local_FunctionStatus;
 
 
 
