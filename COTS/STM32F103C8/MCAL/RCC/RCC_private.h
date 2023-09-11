@@ -41,6 +41,9 @@
 /****************************************PINS (NEEDED) at (((CFGR))) REGISTER*******************************************/
 #define RCC_CFGR_PLLSRC       16 /**< PLL Entry Clock Source */
 #define RCC_CFGR_PLLXTPRE     17 /**< HSE Divider For PLL Entry*/
+#define RCC_CFGR_HPRE          4 /**< AHB Prescaler for Clock*/
+#define RCC_CFGR_PPRE1         8 /**< APB1 Prescaler for Clock*/
+#define RCC_CFGR_PPRE2        11 /**< APB2 Prescaler for Clock*/
 
 
 
@@ -48,7 +51,7 @@
 /****************************CLOCKs FOR PLL *********************/
 #define   RCC_PLL_CLKSRC_HSE                0
 #define   RCC_PLL_CLKSRC_HSI                1
-#define   RCC_PLL_CLKSRC_HSE_DIVIDED        0
+#define   RCC_PLL_CLKSRC_HSE_DIVIDED        2
 #define   RCC_PLL_CLKSRC_HSE_NOT_DIVIDED    1
 
 
@@ -64,14 +67,150 @@
 
 
 
-
-
+/***********************VALUES of CLOCKs************************/                       
+#define RCC_HSI_CLK_VAl             8          
+#define RCC_HSE_CLK_VAL4            4         //  4----16      HZ
+#define RCC_HSE_CLK_VAL5            5
+#define RCC_HSE_CLK_VAL6            6            
+#define RCC_HSE_CLK_VAL7            7           
+#define RCC_HSE_CLK_VAL8            8        
+#define RCC_HSE_CLK_VAL9            9        
+#define RCC_HSE_CLK_VAL10           10        
+#define RCC_HSE_CLK_VAL11           11        
+#define RCC_HSE_CLK_VAL12           12           
+#define RCC_HSE_CLK_VAL13           13        
+#define RCC_HSE_CLK_VAL14           14           
+#define RCC_HSE_CLK_VAL15           15           
+#define RCC_HSE_CLK_VAL16           16               
 
 
 
 /***********************CLK SRC For HSE*************************/
 #define RCC_RC_CLK        1
 #define RCC_CRYSTAL_CLK   0
+
+
+
+/**********************CLK Multiplier For PLL*******************/
+
+#define  PLL_CLK_X2               0b0000            
+#define  PLL_CLK_X3               0b0001 
+#define  PLL_CLK_X4               0b0010 
+#define  PLL_CLK_X5               0b0011 
+#define  PLL_CLK_X6               0b0100 
+#define  PLL_CLK_X7               0b0101 
+#define  PLL_CLK_X8               0b0110 
+#define  PLL_CLK_X9               0b0111 
+#define  PLL_CLK_X10              0b1000  
+#define  PLL_CLK_X11              0b1001 
+#define  PLL_CLK_X12              0b1010 
+#define  PLL_CLK_X13              0b1011 
+#define  PLL_CLK_X14              0b1100 
+#define  PLL_CLK_X15              0b1101 
+#define  PLL_CLK_X16              0b1110 
+
+
+
+
+
+
+
+
+
+/************************CLK PreScaler for AHB************************/
+
+#define RCC_CLK_AHB_DivBy1    0b0000
+#define RCC_CLK_AHB_DivBy2    0b1000
+#define RCC_CLK_AHB_DivBy4    0b1001
+#define RCC_CLK_AHB_DivBy8    0b1010
+#define RCC_CLK_AHB_DivBy16   0b1011
+#define RCC_CLK_AHB_DivBy64   0b1100
+#define RCC_CLK_AHB_DivBy128  0b1101
+#define RCC_CLK_AHB_DivBy256  0b1110
+#define RCC_CLK_AHB_DivBy512  0b1111
+
+
+
+
+
+
+
+
+
+
+/************************CLK PreScaler for APB1 or APB2************************/
+
+#define RCC_CLK_APB_DivBy1    0b000
+#define RCC_CLK_APB_DivBy2    0b100
+#define RCC_CLK_APB_DivBy4    0b101
+#define RCC_CLK_APB_DivBy8    0b110
+#define RCC_CLK_APB_DivBy16   0b111
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

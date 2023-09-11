@@ -149,11 +149,86 @@ Std_ReturnType Mcal_Rcc_DisablePeripheral(u8 Copy_BusId, u8 Copy_PeripheralId);
  *
  * 
  * 
- * @param[in] Copy_Clk_Multi        The Factor to be multiplied (2 ,3 ,4 ,5 ,.....16)
+ * @param[in] Void        
  * @return Std_ReturnType
  * @retval E_OK     PLL Clock multipled successful.
  * @retval E_NOT_OK PLL Clock multipled failed.
  */
-Std_ReturnType Mcal_Rcc_SetPLLClock_MUL(u8 Copy_Clk_Multi);
+Std_ReturnType Mcal_Rcc_SetPLLClock_MUL(void);
+
+
+
+
+
+
+
+
+/**
+ * @brief PreScaler the System Clock Frequency and check if it is higher than the limit value.
+ *
+ * 
+ * 
+ * @param[in] Copy_BusId        The ID of the bus to which the peripheral belongs (RCC_AHB, RCC_APB1, or RCC_APB2).
+ * @return Std_ReturnType
+ * @retval E_OK     PLL Clock multipled successful.
+ * @retval E_NOT_OK PLL Clock multipled failed.
+ */
+Std_ReturnType Mcal_Rcc_SetPreScaler_And_Check(u8 Copy_BusId );
 
 #endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
